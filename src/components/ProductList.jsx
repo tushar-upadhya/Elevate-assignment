@@ -39,8 +39,9 @@ const ProductList = () => {
                             <span className="text-orange-600 font-semibold">
                                 ₹ Price
                             </span>{" "}
-                            {product.price}
+                            {Math.floor(product.price)}
                         </p>
+
                         <img
                             src={product.image}
                             alt={product.title}

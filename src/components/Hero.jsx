@@ -3,7 +3,7 @@ import heroImage from "../assets/heroImage.png";
 
 const Hero = () => {
     return (
-        <div className="bg-yellow-300 ">
+        <div className="bg-yellow-300 h-5/6">
             <div
                 className="bg-contain bg-no-repeat bg-center "
                 style={{ backgroundImage: `url(${heroImage})` }}
