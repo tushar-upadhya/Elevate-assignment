@@ -1,31 +1,25 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
+import { ProductContext } from "../../context/productContext";
+
+// import { ProductContext } from "../context/ProductContext";
 
 const Navbar = () => {
-    const categories = [
-        "All Categories",
-        "Electronics",
-        "Jewelry",
-        "Men's Clothing",
-        "Women's Clothing",
-    ];
-
-    const [selectedCategory, setSelectedCategory] = useState("All Categories");
-
-    const handleCategoryChange = (event) => {
-        setSelectedCategory(event.target.value);
-    };
-
-    const handleSearch = (event) => {
-        const searchTerm = event.target.value;
-        console.log("Search Term:", searchTerm);
-    };
+    const {
+        products,
+        filteredProducts,
+        category,
+        handleSearch,
+        handleCategoryChange,
+        setProducts,
+        setFilteredProducts,
+    } = useContext(ProductContext);
 
     const handleLanguageChange = (event) => {
         const selectedLanguage = event.target.value;
-        console.log("Selected Language:", selectedLanguage);
+        // console.log("Selected Language:", selectedLanguage);
     };
 
     return (
@@ -38,15 +32,15 @@ const Navbar = () => {
 
             <div className="flex items-center gap-4 md:gap-12 lg:gap-16 flex-grow mt-4 md:mt-0">
                 <select
-                    value={selectedCategory}
+                    value={category}
                     onChange={handleCategoryChange}
                     className="w-full cursor-pointer md:w-auto bg-gray-700 text-white rounded-sm px-4 py-2"
                 >
-                    {categories.map((category) => (
-                        <option key={category} value={category}>
-                            {category}
-                        </option>
-                    ))}
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="jewelery"> Jewelery </option>
+                    <option value="men's clothing">Men's Clothing</option>
+                    <option value="women's clothing">Women's Clothing</option>
                 </select>
 
                 {/* Middle section */}
