@@ -1,33 +1,29 @@
 import heroImage from "../assets/heroImage.png";
+// import hero from "../assets/hero.png";
 
 const Hero = () => {
     return (
-        <section className="relative pt-8 bg-yellow-300">
-            <div className="flex h-10 items-center justify-center">
-                <img
-                    src={heroImage}
-                    className="h-40 md:h-60 lg:h-80"
-                    alt="profile pic"
-                />
-            </div>
+        <div className="bg-yellow-300 ">
+            <div
+                className="bg-contain bg-no-repeat bg-center "
+                style={{ backgroundImage: `url(${heroImage})` }}
+            >
+                <div className="px-8 py-16 md:py-32 lg:py-40 flex flex-col items-center justify-center text-center text-gray-800">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl  uppercase font-bold">
+                        get start <br /> your favorites shopping
+                    </h1>
 
-            <div className="px-4 py-16 md:py-32 lg:py-40 flex flex-col items-center justify-center text-center text-white">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
-                    GET START
-                </h1>
-
-                <p className="text-xl mt-4">Your favorite shopping</p>
-
-                <div className="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-3 mt-8">
-                    <button
-                        to="collection"
-                        className="bg-black text-white border-2 border-none text-md px-6 py-3 font-bold uppercase hover:text-black rounded-md hover:bg-white duration-200 cursor-pointer"
-                    >
-                        buy now
-                    </button>
+                    <div className="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-3 mt-8">
+                        <button
+                            to="collection"
+                            className="bg-gray-800 text-white border-none text-md px-6 py-3 font-bold uppercase hover:text-gray-800 hover:bg-white duration-200 cursor-pointer"
+                        >
+                            buy now
+                        </button>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
