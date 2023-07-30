@@ -2,8 +2,8 @@ import heroImage from "../assets/heroImage.png";
 
 const Hero = () => {
     return (
-        <section className="relative bg-yellow-300">
-            <div className="flex  h-10 items-center justify-center">
+        <section className="relative pt-8 bg-yellow-300">
+            <div className="flex h-10 items-center justify-center">
                 <img
                     src={heroImage}
                     className="h-40 md:h-60 lg:h-80"
@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-3 mt-8">
                     <button
                         to="collection"
-                        className="bg-black text-white border-2 border-black text-md px-6 py-3 font-bold uppercase hover:text-black rounded-md hover:bg-white duration-200 cursor-pointer"
+                        className="bg-black text-white border-2 border-none text-md px-6 py-3 font-bold uppercase hover:text-black rounded-md hover:bg-white duration-200 cursor-pointer"
                     >
                         buy now
                     </button>
