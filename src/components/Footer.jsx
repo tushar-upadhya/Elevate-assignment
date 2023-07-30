@@ -7,14 +7,15 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()}{" "}
                 <a
                     href="https://tusharupadhyay.vercel.app/"
-                    className="text-black-300  font-semibold hover:underline duration-100 transition-all ml-2"
+                    className="text-black-300 uppercase font-semibold hover:underline duration-100 transition-all ml-2"
+                    target="_blank"
                 >
-                    TUSHAR UPADHYAY
+                    tushar upadhyay
                 </a>
             </p>
             <div className="flex justify-center space-x-4 mt-4 mr-4">
                 <a
-                    href="https://github.com/tushar-upadhya/e-com-full"
+                    href="https://github.com/tushar-upadhya/Elevate-assignment"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

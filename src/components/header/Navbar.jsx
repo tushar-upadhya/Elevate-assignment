@@ -67,12 +67,14 @@ const Navbar = () => {
                 >
                     <option value="en">English</option>
                     <option value="es">Español</option>
+                    <option value="hi">Hindi</option>
                 </select>
 
                 <div className="flex gap-4 md:gap-8">
                     <div className="text-2xl">
                         <FaShoppingCart />
                     </div>
+
                     <div className="text-2xl">
                         <FaUser />
                     </div>

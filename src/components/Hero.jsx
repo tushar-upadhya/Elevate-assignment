@@ -16,7 +16,7 @@ const Hero = () => {
                     <div className="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-3 mt-8">
                         <button
                             to="collection"
-                            className="bg-gray-800 text-white border-none text-md px-6 py-3 font-bold uppercase hover:text-gray-800 hover:bg-white duration-200 cursor-pointer"
+                            className="bg-gray-800 rounded-sm text-white border-none text-md px-12 py-3 font-bold uppercase hover:text-gray-800 hover:bg-white duration-200 cursor-pointer"
                         >
                             buy now
                         </button>
